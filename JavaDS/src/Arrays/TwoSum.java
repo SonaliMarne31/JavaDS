@@ -1,6 +1,8 @@
+import java.util.HashMap;
+
 class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> hm = new HashMap();
+        HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
         
         for(int i=0; i< nums.length; i++) {
            hm.put(nums[i], i);
@@ -18,10 +20,12 @@ class TwoSum {
     }
 
     public static void main(String[] args) {
-		// TODO Auto-generated method stub
-        int[] nums = new [2,7,11,15];
+        int[] nums = new int[] {2,7,11,15};
         int target = 9;
         TwoSum t = new TwoSum();
-        t.twoSum(nums, target);
+        int[] res = t.twoSum(nums, target);
+        for(int i: res) {
+            System.out.println(res[i]);
+        }
 	}
 }
