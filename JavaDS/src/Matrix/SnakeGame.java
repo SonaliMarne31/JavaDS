@@ -31,7 +31,7 @@ class SnakeGame {
         snake = new boolean[h][w];
         snake[0][0] = true;
         // because we can add and remove elemnets from both side and dynamic size
-        positions = new ArrayDeque();
+        positions = new ArrayDeque<int []>();
         positions.push(new int[]{0, 0});
     }
     

@@ -1,5 +1,4 @@
 package Strings;
-import java.util.*;
 
 /* Input: s = "abc"
 Output: 3

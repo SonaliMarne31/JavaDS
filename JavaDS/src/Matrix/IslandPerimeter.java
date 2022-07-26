@@ -24,7 +24,6 @@ public class IslandPerimeter {
         return ans;
     }
     public int islandPerimeter(int[][] grid) {
-        int ans = 0;
         // to store visited places
         boolean[][] visit = new boolean[grid.length][grid[0].length];
         
