@@ -1,6 +1,6 @@
 package Implement;
 
-public class Circle implements Shape {
+public class Circle implements InterfaceShape {
 
     private int radius;
 

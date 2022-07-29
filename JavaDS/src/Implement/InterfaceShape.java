@@ -1,6 +1,6 @@
 package Implement;
 
-public interface Shape {
+public interface InterfaceShape {
     //implicitly public, static and final
 	public String LABLE="Shape";
 	
