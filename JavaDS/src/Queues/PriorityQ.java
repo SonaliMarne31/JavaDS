@@ -1,4 +1,4 @@
-package queues;
+package Queues;
 
 import java.util.PriorityQueue;
 

@@ -1,4 +1,4 @@
-package stringpractice;
+package Strings;
 
 public class StringCompress {
 

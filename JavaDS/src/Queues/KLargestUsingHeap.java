@@ -1,5 +1,4 @@
-package queues;
-import System.out.TreeNode;
+package Queues;
 import java.lang.Math;
 import java.util.PriorityQueue;
 

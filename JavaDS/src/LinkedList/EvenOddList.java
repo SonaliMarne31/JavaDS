@@ -1,4 +1,4 @@
-package System.out.linkedlist;
+package LinkedList;
 
 public class EvenOddList {
 	

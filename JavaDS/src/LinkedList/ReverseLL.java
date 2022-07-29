@@ -1,5 +1,4 @@
-package System.out.linkedlist;
-import java.util.*;
+package LinkedList;
 
 public class ReverseLL {
 	
