@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class NthFromLast {
+public class RemoveNthFromLast {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         
         // Use 2 pointers
@@ -36,7 +36,7 @@ public class NthFromLast {
         list1.next.next.next = new ListNode(4);
         list1.next.next.next.next = new ListNode(5);
 	
-		NthFromLast n = new NthFromLast();
+		RemoveNthFromLast n = new RemoveNthFromLast();
         ListNode newList = n.removeNthFromEnd(list1, 2);
 		while(newList != null) {
 			System.out.println(newList.val);
