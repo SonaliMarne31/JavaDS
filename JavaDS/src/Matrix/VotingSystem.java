@@ -45,7 +45,7 @@ public class VotingSystem {
 	    }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		String[] votes = new String[]{"ABC","ACB","ABC","ACB","ACB"};
 		
 		VotingSystem v = new VotingSystem();

@@ -35,7 +35,7 @@ public class RansomeNote {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		RansomeNote r = new RansomeNote();
 		r.canConstruct("aa", "ab");
 	}

@@ -32,7 +32,7 @@ public class EvenOddList {
 	
 	public static void main(String[] args) {
 		EvenOddList e = new EvenOddList();
-		// TODO Auto-generated method stub
+		
 		ListNode list = new ListNode(1);
 		list.next = new ListNode(2);
 		list.next.next = new ListNode(3);

@@ -28,7 +28,7 @@ public class Intersection {
     }
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Intersection obj = new Intersection();
 		int[] nums1 = new int[]{ 1,2,2,1 }; 
 		int[] nums2 = new int[]{ 2,2 };

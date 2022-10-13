@@ -105,7 +105,7 @@ public class MinWindowSubstring {
     }
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		MinWindowSubstring m = new MinWindowSubstring();
 		System.out.println(m.minWindowHM(
 				"aaaaaaaaaaaabbbbbcdd", "abcdd"));

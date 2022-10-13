@@ -20,7 +20,7 @@ public class MinStartValue {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		MinStartValue n = new MinStartValue();
 		int[] intArray = new int[]{ -3,2,-3,4,2 }; 

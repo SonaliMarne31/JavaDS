@@ -58,7 +58,7 @@ public class PalindromicSubstring {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		PalindromicSubstring p = new PalindromicSubstring();
 		System.out.println(p.countSubstrings("aaa"));

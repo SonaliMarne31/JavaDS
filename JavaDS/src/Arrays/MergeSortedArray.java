@@ -22,7 +22,7 @@ public class MergeSortedArray {
     }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		MergeSortedArray m = new MergeSortedArray();
 		int[] nums1 = new int[] {1,2,3,0,0,0};

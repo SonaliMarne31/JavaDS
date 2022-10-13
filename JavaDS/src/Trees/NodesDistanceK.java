@@ -63,7 +63,7 @@ public class NodesDistanceK {
         
     }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		NodesDistanceK k = new NodesDistanceK();
 		TreeNode tree = new TreeNode(3);
 		tree.left = new TreeNode(5);
