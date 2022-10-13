@@ -57,6 +57,33 @@ public class PalindromicSubstring {
 		return true;
 	}
 
+	// O(N2)
+	public int countSubstringsDP(String s) {
+        int n = s.length();
+        boolean dp[][] = new boolean[n][n];
+        
+        int count = 0;
+        for(int g=0; g<n; g++) {
+            for(int i=0, j=g; j<n; i++, j++) {
+                if(g == 0) {
+                    dp[i][j] = true; //if one char it is pallindrome
+                } else if(g == 1) {
+                    dp[i][j] = s.charAt(i) == s.charAt(j); //if two char need to check if same or not
+                } else {
+                    if(s.charAt(i) == s.charAt(j) && dp[i+1][j-1]) { //we will compare start and end char and mid par to be pallindrome
+                        dp[i][j] = true;
+                    } else {
+                        dp[i][j] = false;
+                    }
+                }
+                
+                if(dp[i][j]) count++;
+            }
+        }
+            
+        return count;
+    }
+
 	public static void main(String[] args) {
 		
 		

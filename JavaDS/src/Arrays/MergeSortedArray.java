@@ -2,6 +2,7 @@ package Arrays;
 
 public class MergeSortedArray {
 	
+    // Time complexity: O(n+m).
 	public void merge(int[] nums1, int m, int[] nums2, int n) {
         // Set p1 and p2 to point to the end of their respective arrays.
         int p1 = m - 1;
