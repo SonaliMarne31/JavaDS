@@ -13,8 +13,8 @@ class DFSTraversal {
         V = v;
         adj = new LinkedList[v];
         for (int i = 0; i < v; ++i)
-{
-          adj[i] = new LinkedList();
+        {
+            adj[i] = new LinkedList();
     	}
  
     void addEdge(int v, int w)
@@ -46,24 +46,36 @@ class DFSTraversal {
         DFSUtil(v, already);
     }
  
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         DFSTraversal g = new DFSTraversal(6);
  
-        g.addEdge(0, 1);
-        g.addEdge(0, 2);
-        g.addEdge(1, 0);
-        g.addEdge(1, 3);
-        g.addEdge(2, 0);
+        // g.addEdge(0, 1);
+        // g.addEdge(0, 2);
+        // g.addEdge(1, 0);
+        // g.addEdge(1, 3);
+        // g.addEdge(2, 0);
+        // g.addEdge(2, 3);
+        // g.addEdge(3, 4);
+        // g.addEdge(3, 5);
+        // g.addEdge(4, 3);
+        // g.addEdge(5, 3);
+
+
+        g.addEdge(1, 1);
+        g.addEdge(1, 2);
+        g.addEdge(1, 4);
         g.addEdge(2, 3);
-        g.addEdge(3, 4);
-        g.addEdge(3, 5);
-        g.addEdge(4, 3);
+        g.addEdge(2, 5);
+        g.addEdge(2, 1);
         g.addEdge(5, 3);
+        g.addEdge(5, 6);
+        g.addEdge(8, 1);
+        g.addEdge(8, 9);
  
         System.out.println(
             "Following is Depth First Traversal: ");
  
-        g.DFS(0);
+        g.DFS(1);
     }
 }
