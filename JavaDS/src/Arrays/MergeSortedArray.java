@@ -1,4 +1,5 @@
 package Arrays;
+import java.util.*;
 
 public class MergeSortedArray {
 	
@@ -20,6 +21,15 @@ public class MergeSortedArray {
                 nums1[p] = nums2[p2--];
             }
         }
+    }
+
+    // Time complexity:O(n + m)
+    // Space complexity: O(n), but it can vary.
+    public void merge1(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = 0; i < n; i++) {
+            nums1[i + m] = nums2[i];
+        }
+        Arrays.sort(nums1);
     }
 
 	public static void main(String[] args) {

@@ -70,10 +70,6 @@ class Stack
     public boolean isFull() {
         return top == capacity - 1;     // or return size() == capacity;
     }
-}
- 
-class Main
-{
     public static void main (String[] args)
     {
         Stack stack = new Stack(3);
@@ -100,3 +96,4 @@ class Main
         }
     }
 }
+ 

@@ -7,6 +7,7 @@ public class Graph {
       boolean visited[];
       int nodes;
     
+      // Constructor
       Graph(int nodes) {
           graph = new ArrayList<>();
           visited = new boolean[nodes];
@@ -17,6 +18,7 @@ public class Graph {
           }
       }
   
+    // create the graph
     public void addEdge(int a, int b) {
         graph.get(a).add(b);
     }
@@ -26,6 +28,7 @@ public class Graph {
         return visited[destination];
     }
   
+    // Actual logic - DFS traversal to check if path exists
     public void dfs(int index) {
       Stack<Integer> stack = new Stack<>();
       
@@ -46,16 +49,16 @@ public class Graph {
         }
     }
     
-    public void dfsAnother(int start) {
-      visited[start] = true;
+    // public void dfsAnother(int start) {
+    //   visited[start] = true;
   
-      List<Integer> neighboursList = graph.get(start);
+    //   List<Integer> neighboursList = graph.get(start);
   
-      for (Integer neighbour : neighboursList) {
-          if (!visited[neighbour]) {
-              dfsAnother(neighbour);
-          }
-      }
-    }
+    //   for (Integer neighbour : neighboursList) {
+    //       if (!visited[neighbour]) {
+    //           dfsAnother(neighbour);
+    //       }
+    //   }
+    // }
   }
   
