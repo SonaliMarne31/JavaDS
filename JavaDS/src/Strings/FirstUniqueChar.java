@@ -5,26 +5,24 @@ import java.util.HashMap;
 public class FirstUniqueChar {
 	
 	public int firstUniqChar(String s) {
-        int index;
-        HashMap<Character, Integer> hash = new HashMap<Character, Integer>();
-        for (int i = 0; i< s.length(); i++) {
+        HashMap<Character, Integer> count = new HashMap<Character, Integer>();
+        int n = s.length();
+        // build hash map : character and how often it appears
+        for (int i = 0; i < n; i++) {
             char c = s.charAt(i);
-            if (hash.containsKey(c)) {
-                hash.put(c, hash.get(c) + 1);
-            } else {
-                hash.put(c, 1);
-            }        
+            count.put(c, count.getOrDefault(c, 0) + 1);
         }
-        for (int i = 0; i<s.length() ; i++) {
-            if(hash.get(s.charAt(i)) == 1) {
+        
+        // find the index
+        for (int i = 0; i < n; i++) {
+            if (count.get(s.charAt(i)) == 1) 
                 return i;
-            }
         }
         return -1;
     }
 	
 	public static void main(String args[]){
 		FirstUniqueChar f = new FirstUniqueChar();
-		System.out.println(f.firstUniqChar("dddccdbba"));
+		System.out.println(f.firstUniqChar("loveleetcode"));
 	}
 }
